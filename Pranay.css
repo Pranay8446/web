@@ -293,15 +293,15 @@ input{
         height: 50%;
     }
     .img img{
-        height: 90%;
+        height: 49vw;
         text-align: center;
-    
-        width: 54%;
+        width: 50vw;
+        margin-top: 11vw;
     }
 
     #info{
         flex-direction: column;
-        padding: 11vw 8.5vw;
+        padding: 4vw 8.5vw;
         
     }
     .img2{
@@ -309,8 +309,7 @@ input{
         text-align: center;
     }
     .img2 img{
-        height: 49vw;
-        width: 50vw;
+        display: none;
     }
     .about{
         width: 100%;
@@ -365,9 +364,8 @@ input{
         width: 100%;
     }
     .pre{
-        height: 50%;
+        height: 70%;
         width: 100%;
-        
     padding: 1vw 2px;
 
     }
