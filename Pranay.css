@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family:
+    sans-serif; */
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 37, 47);
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+#can{
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    /* background-color:gray; */
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo h1{
+    font-size: 33px;
+    margin: 0 1.3vw;
+}
+#nav{
+    display: flex;
+    /* margin: 0 0px; */
+}
+#nav a{
+    font-size: 1.25vw;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 1.3vw;
+}
+#nav a:hover{
+    color: #00E8F8;
+}
+#nav i{
+    font-weight: 900;
+    display: none;
+}
+#me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 50px);
+    width: 100%;
+    padding: 0 40px;
+
+}
+
+.img img{
+    height: 50%;
+    width: 53%;
+    margin-left: 18vw;
+    border-bottom: 9px solid #00E8F8;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.title{
+    margin: 0 1.3vw;
+}
+.title h1{
+    color: white;
+    font-size: 3vw;
+    line-height: 4vw;
+}
+.title p{
+    margin-top: 15px;
+    font-size: 1.5vw;
+}
+
+#info{
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+.img2 img{
+    height: 34vw;
+    width: 34vw;
+    margin-top: 30px;
+    /* background-color: #00E8F8; */
+}
+
+.about{
+    margin: 0 12vw ;
+}
+.about h1{
+    margin-bottom: 5vh;
+    font-size: 2.5vw;
+}
+.about p{
+    margin-top: 15px;
+    font-size: 1.5vw;
+}
+
+.our{
+    display: flex;
+    justify-content: center;
+}
+.our h1{
+    margin-top: 18vh;
+    font-size: 2.3vw;
+    font-weight: 600;
+}
+
+#services{
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 9vw;
+    text-align: center;
+}
+
+.card img{
+    height: 6vw;
+    width: 6vw;
+    margin-top: 70px;
+}
+
+.card{
+    margin-top: 4.3vw;
+    height: 22vw;
+    width: 20vw;
+    cursor: pointer;
+    padding: 12px;
+}
+.card:hover{
+    border: 3px solid rgb(41, 49, 58);
+}
+.card h1{
+    margin-top: 12px;
+    font-size:22px;
+    font-weight: 700;
+}
+.card p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+.h1 h1{
+    margin-top:10vw;
+    text-align: center;
+}
+
+#mes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.text{
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 6vw;
+    /* background-color: red; */
+}
+.in{
+    display: flex;
+    justify-content: center;
+    gap: 9vw;
+}
+.out{
+    display: flex;
+    justify-content: center;
+    gap: 9vw;
+    margin-top: 4vw;
+}
+
+
+input{
+    height: 2.7vw;
+    width: 29vw;
+    background-color: transparent;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#pro{
+    margin-top: 70px;
+    padding: 5vw;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    /* white-space: nowrap; */
+
+    /* display: flex; */
+}
+#box{
+    height: 350px;
+    margin: 0 6vw;
+    /* background-color: yellow; */
+    white-space: nowrap;
+    overflow-x: auto;
+    /* display: flex; */
+}
+#box::-webkit-scrollbar{
+    display: none;
+}
+
+.pre{
+    margin-top: 12px;
+    white-space: wrap;
+    height: 280px;
+    width: 49%;
+    margin-left:9px;
+    border-radius: 13px;
+    background-color: rgb(31, 41, 52);
+    display: inline-block;
+    padding: 12px;
+
+}
+
+.p p{
+    font-size: 18px;
+    margin: 12px;
+    padding: 0px 12px;
+}
+.dp{
+    display: flex;
+    align-items: center;
+}
+.dp h1{
+    font-weight: 700;
+}
+.pre img{
+    margin: 44px;
+    height: 65px;
+    width: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    body{
+        flex-direction: column;
+    }
+    #can{
+        height: 40px;
+        /* background-color: #00E8F8; */
+    }
+    #can a{
+       display: none; 
+    }
+    #nav i{
+        display: block;
+    }
+    #me{
+        height: calc(100% - 40px);
+        flex-direction: column;
+    }
+    .title{
+        margin-top: 4vw ;
+        width: 100%;
+        height:50%;
+        padding: 1vw 1vw;
+    }
+    
+    .title h1{
+        font-size: 5vh;         
+        line-height: 11vw;
+        margin-top: 18vw;
+
+    }
+    .title p{
+        width: 100%;
+        font-size: 4vw;
+    }
+    .img{
+        width: 100%;
+        height: 50%;
+    }
+    .img img{
+        height: 90%;
+        text-align: center;
+    
+        width: 54%;
+    }
+
+    #info{
+        flex-direction: column;
+        padding: 11vw 8.5vw;
+        
+    }
+    .img2{
+        width: 100%;
+        text-align: center;
+    }
+    .img2 img{
+        height: 49vw;
+        width: 50vw;
+    }
+    .about{
+        width: 100%;
+    }
+    .about h1{
+        margin-top: 6vw;
+        font-size: 5vh; 
+    }
+    .about p{
+        width: 100%;
+        font-size: 4vw;
+    }
+    .our h1{
+        font-size: 5vh; 
+    }
+
+
+    #services{
+        height: 100%;
+        width: 100%;
+        margin-top: 7vw;
+        gap: 1vw;
+        flex-direction: column;
+    }
+    #card1{
+        margin-top: 50px;
+    }
+    .card{
+        height: 40%;
+        width: 80%;
+        gap: 1vw;
+        margin-left: 10%;
+        /* background-color: red; */
+    }
+    .card img{
+        height: 13vw;
+        width: 13vw;
+        margin-top: 30px;
+    }
+    .card h1{
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .card p{
+        font-size: 3.2vw;
+    }
+
+    .h1 h1{
+        margin-top: 25vw;
+    }
+    #pro{
+        width: 100%;
+    }
+    .pre{
+        height: 50%;
+        width: 100%;
+        
+    padding: 1vw 2px;
+
+    }
+    .dp{
+        height: 20vw;
+        width: 100%;
+        margin-top: 1vw;
+        /* background-color: red; */
+    }
+    .dp img{
+        height: 14vw;
+        width: 14vw;
+        /* background-color: black; */
+    }
+
+    .dp h1{
+        font-size: 6vw;
+    }
+    .p p{
+        font-size: 3    vw;
+    }
+
+
+
+}
